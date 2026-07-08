@@ -1,5 +1,7 @@
 # Backend API Automation Portfolio
 
+[![Backend API Tests](https://github.com/LaVieDetoile/backend-api-automation-portfolio/actions/workflows/api-tests.yml/badge.svg)](https://github.com/LaVieDetoile/backend-api-automation-portfolio/actions/workflows/api-tests.yml)
+
 A safe public portfolio project that demonstrates backend/API test automation with Python, Pytest, Requests, Pydantic models, reusable API clients, shared fixtures, cleanup logic, linting, reporting, and GitHub Actions CI.
 
 ## Public Portfolio Disclaimer
@@ -113,7 +115,7 @@ poetry run ruff format .
 
 The CI workflow runs on `push` and `pull_request`. It checks out the repository, installs Python and Poetry, installs dependencies, runs Ruff linting, runs the Pytest API suite, and uploads the HTML report as an artifact.
 
-## What Interviewers Should Notice
+## Framework Practices
 
 - Tests use API clients instead of raw request calls spread across test files.
 - Pydantic models validate response contracts and make failures easier to diagnose.
@@ -135,5 +137,5 @@ After authenticating GitHub CLI with the intended account, run:
 ```bash
 cd /Users/laurautarbayeva/Desktop/repos/backend-api-automation-portfolio
 gh auth status
-gh repo create LauraUtar/backend-api-automation-portfolio --public --source=. --remote=origin --push
+gh repo create LaVieDetoile/backend-api-automation-portfolio --public --source=. --remote=origin --push
 ```
